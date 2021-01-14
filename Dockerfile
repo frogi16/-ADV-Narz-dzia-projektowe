@@ -21,3 +21,6 @@ RUN apt-get install -y --no-install-recommends\
     apt-get autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY . /app
